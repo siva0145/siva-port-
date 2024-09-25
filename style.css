@@ -25,8 +25,21 @@ body{
 nav{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-end; /* Aligns the text (links) to the right */
     flex-wrap: wrap;
+    position: fixed;
+    right: 25px;
+    top: 20px;
+    background-color: #333; /* Dark background */
+    padding: 15px 50px; /* Adjust the padding to maintain proportions */
+    width: 98%; /* Adjust width to keep it large */
+     /* Red border */
+    border-radius: 10px; /* Apply the same border-radius to all corners */
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+   
+
+
 }
 
 .logo{
@@ -128,7 +141,7 @@ nav ul li a:hover::after{
     margin: 10px 0;
 }
 .tab-contents ul li span{
-    color: #b54769;
+    color: #ff0000;
     font-size: 14px;
 }
 .tab-contents{

@@ -1,213 +1,231 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
+
 <body>
-<div id="header">
-    <div class="container">
-        <nav>
-            <img src="" class="logo">
-            <ul id="sidemenu">
-                <li><a href="#header">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Skills</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <i class="fas fa-times" onclick="closemenu()"></i>
-            </ul>
-            <i class="fas fa-bars" onclick="openmenu()"></i>
-        </nav>
-        <div class="header-text">
-            <p>Passionate Chatbot Developer</p>
-            <h1>Hi, I'm <span>Siva</span><br>Subramanyam</h1>
-        </div>
-    </div>
-</div>
-<!-- -----------about---------- -->
-<div id="about">
-    <div class="container">
-        <div class="row">
-            <div class="about-col-1">
-                <img src="images/my pic.jpg">
-            </div>
-            <div class="about-col-2">
-                <h1 class="sub-title">About Me</h1>
-                <p>An Active Learner wishing to earn a job that provides self satisfaction ,self development and achieving organizational goals. Ready to learn any new technology that can be beneficial to my work and for the growth of the organization. Currently pursuing Masters in Information Technology from IIIT Hyderabad.</p>
-
-                <div class="tab-titles">
-                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                    <p class="tab-links" onclick="opentab('education')">Education</p>
-                </div>
-                <div class="tab-contents active-tab" id="skills">
-                    <ul>
-                        <li><span>Languages </span><br> Telugu , Hindi , English</li>
-                        <li><span>Web Development</span><br>Web app Development</li>
-                
-                    </ul>
-                </div>
-                <div class="tab-contents" id="experience">
-                    <ul>
-                        <li><span>2023 September - December</span><br>Internship at Phoebus AI Solutions.</li>
-            
-                    </ul>
-                </div>
-                <div class="tab-contents" id="education">
-                    <ul>
-                        <li><span>2019-2023</span><br>Bachelor of Technology from Malla Reddy Engineering College.</li>
-                        <li><span>2017-2019</span><br>Intermediate from Narayana Junior College.</li>
-                        <li><span>2017</span><br>SSC from Brilliant Grammar High School.</li>
-                    </ul>
-                </div>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Skills</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Passionate Chatbot Developer</p>
+                <h1>Hi, I'm <span>Siva</span><br>Subramanyam</h1>
             </div>
         </div>
     </div>
-</div>
-<!-- ---------services---------------- -->
-<div id="services">
-    <div class="container">
-        <h1 class="sub-title">Technical Skills</h1>
-        <div class="services-list">
-            <div>
-                <i class="fas fa-code"></i>
-                <h2>Java</h2>
-                <p>Java is a widely-used programming language that was developed by Sun Microsystems in 1995 and later acquired by Oracle Corporation. It is known for its philosophy of "Write Once, Run Anywhere" (WORA), meaning that compiled Java code can run on all platforms that support Java without the need for recompilation..</p>
-                
-            </div>
-            <div>
-                <i class="fas fa-crop-alt"></i>
-                <h2>Python</h2>
-                <p>Python is a high-level, interpreted programming language known for its clear syntax and readability, making it an excellent choice for beginners as well as experienced programmers. Developed by Guido van Rossum and first released in 1991, Python has grown to become one of the most popular programming languages in the world..</p>
-            </div>
-            <div>
-                <i class="fab fa-app-store"></i>
-                <h2>SQL</h2>
-                <p>SQL (Structured Query Language) is a specialized programming language designed for managing and manipulating relational databases. Developed in the 1970s at IBM, SQL has become the standard language for database management and is used by a variety of database systems, such as MySQL, PostgreSQL, SQL Server, and Oracle.</p>
-                
-            </div>
-        </div>
-    </div>
-</div>
-<!-- ----------portfolio------------ -->
-<div id="portfolio">
-    <div class="container">
-        <h1 class="sub-title">My Work</h1>
-        <div class="work-list">
-            <div class="work">
-                <img src="images/my work 1 .png">
-                <div class="layer">
-                    <h3>Olive chatbot</h3>
-                    <p>The chatbot helps you book your stay at your comfort. You can visit their website for more details .</p>
-                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+    <!-- -----------about---------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/my pic.jpg">
                 </div>
-            </div>
-            <div class="work">
-                <img src="images/my work 2 .png">
-                <div class="layer">
-                    <h3>Manipal chatbot</h3>
-                    <p>The chatbot helps you book your appointments with the doctors.</p>
-                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
-                </div>
-            </div>
-            <div class="work">
-                <img src="images/work-3 .png">
-                <div class="layer">
-                    <h3>BPCL chatbot </h3>
-                    <p>This chatbot helps you book a cylinder and find nearest BPCL station from your location.</p>
-                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p><h3>An Active Learner wishing to earn a job that provides self satisfaction ,self development and
+                        achieving organizational goals. Ready to learn any new technology that can be beneficial to my
+                        work and for the growth of the organization. Currently pursuing Masters in Information
+                        Technology from IIIT Hyderabad.</h3></p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span><h3>Languages </h3></span><br> <h2>Telugu , Hindi , English</h2></li>
+                            <li><span><h3>Web Development</h3></span><br><h2>Web app Development</h2></li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span><h3>2023 September - December</h3></span><br>Internship at Phoebus AI Solutions.</li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span><h3>2019-2023</h3></span><br>Bachelor of Technology from Malla Reddy Engineering College.
+                            </li>
+                            <li><span><h3>2017-2019</h3></span><br>Intermediate from Narayana Junior College.</li>
+                            <li><span><h3>2017</h3></span><br>SSC from Brilliant Grammar High School.</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
-        <a href="#" class="btn">See more</a>
     </div>
-</div>
-<!-- ----------contact------------- -->
-<div id="contact">
-    <div class="container">
-        <div class="row">
-            <div class="contact-left">
-                <h1 class="sub-title">Contact Me</h1>
-                <p><i class="fas fa-paper-plane"></i> s.siva123@gmail.com</p>
-                <p><i class="fas fa-phone-square-alt"></i> 9876543210</p>
-                <div class="social-icons">
-                    <a href="https://facebook.com/"><i class="fab fa-facebook"></i></a>
-                    <a href=""><i class="fab fa-twitter-square"></i></a>
-                    <a href=""><i class="fab fa-instagram"></i></a>
-                    <a href=""><i class="fab fa-linkedin"></i></a>
+    <!-- ---------services---------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">Technical Skills</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>Java</h2>
+                    <p>Java is a widely-used programming language that was developed by Sun Microsystems in 1995 and
+                        later acquired by Oracle Corporation. It is known for its philosophy of "Write Once, Run
+                        Anywhere" (WORA), meaning that compiled Java code can run on all platforms that support Java
+                        without the need for recompilation..</p>
+
                 </div>
-                <a href="images/Siva Resume.pdf" download class="btn btn2">Download Resume</a>
-            </div>
-            <div class="contact-right">
-                <form name="submit-to-google-sheet">
-                    <input type="text" name="Name" placeholder="Your Name" required>
-                    <input type="email" name="Email" placeholder="Your Email" required>
-                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                    <button type="submit" class="btn btn2">Submit</button>
-                </form>
-                <span id="msg"></span>
+                <div>
+                    <i class="fas fa-crop-alt"></i>
+                    <h2>Python</h2>
+                    <p>Python is a high-level, interpreted programming language known for its clear syntax and
+                        readability, making it an excellent choice for beginners as well as experienced programmers.
+                        Developed by Guido van Rossum and first released in 1991, Python has grown to become one of the
+                        most popular programming languages in the world..</p>
+                </div>
+                <div>
+                    <i class="fab fa-app-store"></i>
+                    <h2>SQL</h2>
+                    <p>SQL (Structured Query Language) is a specialized programming language designed for managing and
+                        manipulating relational databases. Developed in the 1970s at IBM, SQL has become the standard
+                        language for database management and is used by a variety of database systems, such as MySQL,
+                        PostgreSQL, SQL Server, and Oracle.</p>
+
+                </div>
             </div>
         </div>
     </div>
-    <div class="copyright">
-        <p>Copyright © Siva. <i class="fas fa-heart"></i> <a href="#"></a></p>
+    <!-- ----------portfolio------------ -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/my work 1 .png">
+                    <div class="layer">
+                        <h3>Olive chatbot</h3>
+                        <p>The chatbot helps you book your stay at your comfort. You can visit their website for more
+                            details .</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/my work 2 .png">
+                    <div class="layer">
+                        <h3>Manipal chatbot</h3>
+                        <p>The chatbot helps you book your appointments with the doctors.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png">
+                    <div class="layer">
+                        <h3>BPCL chatbot </h3>
+                        <p>This chatbot helps you book a cylinder and find nearest BPCL station from your location.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
     </div>
-</div>
+    <!-- ----------contact------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i> s.siva123@gmail.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i> 9876543210</p>
+                    <div class="social-icons">
+                        <a href="https://facebook.com/"><i class="fab fa-facebook"></i></a>
+                        <a href=""><i class="fab fa-twitter-square"></i></a>
+                        <a href=""><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/siva-subramanyam-80981421b"><i
+                                class="fab fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/Siva Resume.pdf" download class="btn btn2">Download Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Siva. <i class="fas fa-heart"></i> <a href="#"></a></p>
+        </div>
+    </div>
 
 
 
-<script>
+    <script>
 
-    var tablinks = document.getElementsByClassName("tab-links");
-    var tabcontents = document.getElementsByClassName("tab-contents");
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
 
-    function opentab(tabname){
-        for(tablink of tablinks){
-            tablink.classList.remove("active-link");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
         }
-        for(tabcontent of tabcontents){
-            tabcontent.classList.remove("active-tab");
+
+    </script>
+
+    <script>
+
+        var sidemeu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemeu.style.right = "0";
         }
-        event.currentTarget.classList.add("active-link");
-        document.getElementById(tabname).classList.add("active-tab");
-    }
+        function closemenu() {
+            sidemeu.style.right = "-200px";
+        }
 
-</script>
+    </script>
+    <script>
+        const scriptURL = '< add you own link here >' // add your own app script link here
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
 
-<script>
-
-    var sidemeu = document.getElementById("sidemenu");
-
-    function openmenu(){
-        sidemeu.style.right = "0";
-    }
-    function closemenu(){
-        sidemeu.style.right = "-200px";
-    }
-
-</script>
-<script>
-    const scriptURL = '< add you own link here >' // add your own app script link here
-    const form = document.forms['submit-to-google-sheet']
-    const msg = document.getElementById("msg")
-  
-    form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => {
-            msg.innerHTML = "Message sent successfully"
-            setTimeout(function(){
-                msg.innerHTML = ""
-            },5000)
-            form.reset()
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
         })
-        .catch(error => console.error('Error!', error.message))
-    })
-  </script>
+    </script>
 </body>
+
 </html>
